@@ -278,6 +278,12 @@ namespace SpecBind.Selenium
             return this.WrappedElement.GetAttribute(attributeName);
         }
 
+        /// <inheritdoc />
+        public string GetProperty(string propertyName)
+        {
+            return this.WrappedElement.GetProperty(propertyName);
+        }
+
         /// <summary>
         /// Gets the value of a CSS property of this element.
         /// </summary>

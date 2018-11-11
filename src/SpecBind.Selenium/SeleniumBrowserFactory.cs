@@ -103,7 +103,7 @@ namespace SpecBind.Selenium
                     this.SeleniumDriver = new SeleniumChromeDriver(browserFactoryConfiguration);
                     break;
                 case BrowserType.PhantomJS:
-                    this.SeleniumDriver = new SeleniumPhantomJSDriver(browserFactoryConfiguration);
+                    throw new NotSupportedException("Removed PhantomJS support for conflicting API/package move");
                     break;
                 case BrowserType.Safari:
                     this.SeleniumDriver = new SeleniumSafariDriver(browserFactoryConfiguration);

@@ -31,7 +31,7 @@ namespace SpecBind.Selenium.Drivers
         /// <returns>The configured web driver.</returns>
         protected override IWebDriver CreateLocalDriver()
         {
-            var edgeOptions = new EdgeOptions { PageLoadStrategy = EdgePageLoadStrategy.Normal };
+            var edgeOptions = new EdgeOptions { PageLoadStrategy = (PageLoadStrategy)EdgePageLoadStrategy.Normal };
             var edgeDriverService = EdgeDriverService.CreateDefaultService();
             return new EdgeDriver(edgeDriverService, edgeOptions);
         }
